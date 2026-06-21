@@ -150,4 +150,4 @@ This project is created for learning and internship purposes.
 
 ## Project Status
 
-Completed and fully functional calculator.
+Completed and fully functional.
