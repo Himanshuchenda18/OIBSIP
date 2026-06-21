@@ -13,6 +13,8 @@ background:radial-gradient(circle at top left,#273c75,transparent 40%),radial-gr
 color:white;
 overflow-x:hidden;
 }
+
+
 body::before{
 content:"";
 position:absolute;
@@ -201,5 +203,3 @@ font-size:18px;
 font-size:32px;
 }
 }
-
-/* Professional calculator styling */
