@@ -110,3 +110,5 @@ if(dots>1){
 display.value=value.slice(0,-1);
 }
 });
+
+//created professional calculator
