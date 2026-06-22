@@ -156,6 +156,6 @@ This project is created for learning and internship purposes.
 
 Completed and fully functional.
 
-## Live Demo
+## Live Demo link
 
-https://himanshuchenda18.github.io/OIBSIP/
+https://himanshuchenda18.github.io/OIBSIP/Himanshu_Task1_Calculator/
