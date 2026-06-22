@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FocusTasks Pro</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="background-shape shape1"></div>
+<div class="background-shape shape2"></div>
+<div class="background-shape shape3"></div>
+<div class="app">
+<header class="header">
+<div class="brand">
+<div class="logo">TF</div>
+<div class="brand-text">
+<h1>FocusTasks Pro</h1>
+<p>Organize your life with clarity and focus</p>
+</div>
+</div>
+<div class="header-right">
+<select id="themeSelect">
+<option value="default">Default</option>
+<option value="dark">Dark</option>
+<option value="ocean">Ocean</option>
+<option value="neon">Neon</option>
+<option value="minimal">Minimal</option>
+<option value="glass">Glass</option>
+</select>
+</div>
+</header>
+<section class="hero">
+<div class="hero-left">
+<h2>Stay Organized.<br>Stay Productive.</h2>
+<p>Manage your daily tasks, monitor your progress and achieve your goals with an elegant and smart task management experience.</p>
+</div>
+<div class="hero-right">
+<div class="progress-card">
+<div class="progress-top">
+<h3>Today's Progress</h3>
+<h4 id="progressPercent">0%</h4>
+</div>
+<div class="progress-track">
+<div id="progressBar" class="progress-bar"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="stats">
+<div class="stat-card">
+<div class="stat-icon">📋</div>
+<h3>Total Tasks</h3>
+<span id="totalTasks">0</span>
+</div>
+<div class="stat-card">
+<div class="stat-icon">✅</div>
+<h3>Completed</h3>
+<span id="completedTasks">0</span>
+</div>
+<div class="stat-card">
+<div class="stat-icon">⏳</div>
+<h3>Pending</h3>
+<span id="pendingTasks">0</span>
+</div>
+<div class="stat-card">
+<div class="stat-icon">🚀</div>
+<h3>Success Rate</h3>
+<span id="completionRate">0%</span>
+</div>
+</section>
+<section class="task-panel">
+<div class="panel-header">
+<h2>Create New Task</h2>
+<p>Add tasks and stay ahead of your schedule.</p>
+</div>
+<div class="task-form">
+<input type="text" id="taskInput" placeholder="Enter task title">
+<select id="categorySelect">
+<option value="Work">Work</option>
+<option value="Study">Study</option>
+<option value="Personal">Personal</option>
+<option value="Health">Health</option>
+<option value="Shopping">Shopping</option>
+</select>
+<select id="prioritySelect">
+<option value="High">High Priority</option>
+<option value="Medium">Medium Priority</option>
+<option value="Low">Low Priority</option>
+</select>
+<input type="date" id="dueDate">
+<button id="addTaskBtn">Add Task</button>
+</div>
+</section>
+<section class="toolbar">
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search tasks here">
+</div>
+<div class="toolbar-right">
+<select id="sortSelect">
+<option value="latest">Latest First</option>
+<option value="priority">Priority Wise</option>
+<option value="date">Due Date</option>
+</select>
+<div class="filters">
+<button class="filter-btn active" data-filter="all">All</button>
+<button class="filter-btn" data-filter="pending">Pending</button>
+<button class="filter-btn" data-filter="completed">Completed</button>
+</div>
+</div>
+</section>
+<section class="task-sections">
+<div class="task-column">
+<div class="column-header">
+<h2>Pending Tasks</h2>
+<p>Things you still need to finish</p>
+</div>
+<div id="pendingTaskContainer" class="task-container"></div>
+</div>
+<div class="task-column">
+<div class="column-header">
+<h2>Completed Tasks</h2>
+<p>Your successfully completed tasks</p>
+</div>
+<div id="completedTaskContainer" class="task-container"></div>
+</div>
+</section>
+<section class="bottom-actions">
+<button id="resetBtn">Reset All Tasks</button>
+</section>
+<footer class="footer">
+<h3>FocusTasks Pro</h3>
+<p>Smart To-Do Web Application © 2026</p>
+</footer>
+</div>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
